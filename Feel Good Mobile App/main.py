@@ -72,6 +72,7 @@ class LoginSuccess(Screen):
             q = file.readlines()
             self.ids.quote.text = random.choice(q)
         else:
+            
             self.ids.quote.text = "try another feeling"
 
 class ImageButton(ButtonBehavior, HoverBehavior, Image):
